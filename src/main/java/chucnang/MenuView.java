@@ -17,6 +17,7 @@ public class MenuView {
     }
     
     public int hien_thi_menu(){
+        
         System.out.println("+++++++++++++++++++++++");
         System.out.println("1. Nhap du lieu");
         System.out.println("2. Tim kiem ");

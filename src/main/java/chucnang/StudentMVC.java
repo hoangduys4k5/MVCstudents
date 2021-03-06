@@ -5,9 +5,6 @@
  */
 package chucnang;
 
-import chucnang.MenuController;
-import chucnang.MenuView;
-
 /**
  *
  * @author MyPC
