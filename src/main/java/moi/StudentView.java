@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package chucnang;
+package moi;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -26,13 +26,25 @@ public class StudentView {
     public Student them_du_lieu_sinh_vien(){
         System.out.println("++++++++++++++++++++++++++++++++++");
         System.out.println("Fullname: ");
+        String hocluc;
         Scanner sc = new Scanner(System.in);
         String fullname = sc.nextLine();
         System.out.println("Age: ");
         float age = Float.parseFloat(sc.nextLine());
         System.out.println("Phone: ");
         String phone = sc.nextLine();
-        Student sv = new Student(fullname, age, phone);
+        System.out.println("Diem trung binh: ");
+        float dtb = Float.parseFloat(sc.nextLine());
+        if (dtb>8){
+            hocluc="Gioi";
+        }else if(dtb>=6.5){
+            hocluc = "Kha";
+        }else if(dtb>=4){
+            hocluc = "Trung binh";
+        }else{
+            hocluc= "kem";
+        }
+        Student sv = new Student(fullname, age, phone, dtb, hocluc);
         System.out.println("Finished");
         System.out.println("++++++++++++++++++++++++++++++++++");
         return sv;

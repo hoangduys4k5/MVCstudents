@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package chucnang;
+package moi;
 
 import java.util.ArrayList;
 
@@ -73,3 +73,4 @@ public class StudentController {
         this.view.ket_qua_tim_kiem_sdt(kq);
     }
 }
+
